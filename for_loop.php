@@ -1,10 +1,10 @@
 <!--Bermas, Estella Mae E.
     CYB-201
-    November 27, 2025 -->
+    December 3, 2025 -->
 <?php
 
-$best_sellers = ['Echeveria', 'Jade Plant', 'Aloe Vera', 'String of Pearls'];
-$prices = [120, 150, 90, 75];
+$best_sellers = ['Echeveria', 'Jade Plant', 'Aloe Vera', 'String of Pearls', 'Snake Plant', 'Cactus Mix', 'Haworthia', 'Sedum'];
+$prices = [120, 150, 90, 75, 135, 85, 110, 95];
 $catalog = [];
 // for loop: builds a product catalog combining product names and prices
 for ($i = 0; $i < count($best_sellers); $i++) {

@@ -1,25 +1,25 @@
 /*  Bermas, Estella Mae E.
     CYB-201
-    November 27, 2025*/
+    December 3, 2025*/
 * { box-sizing: border-box; }
 body {
   font-family: 'Georgia', serif;
   margin: 0;
   background-color: #fff;
-  background-image: url('green.jpg');
+  background-image: url('gray.jpg'); /*changed to gray.jpg to tone down its vibrancy, and appear more minimalistic */
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: cover; 
-  background-attachment: fixed; 
+  background-size: cover;
+  background-attachment: fixed;
   color: #1b2f24;
   padding: 40px 20px;
-  padding-bottom: 120px; 
+  padding-bottom: 120px;
 }
 .container {
   max-width: 740px;
-  margin: 20px auto 120px auto; 
+  margin: 20px auto 120px auto;
   background: #fff;
-  padding: 76px 40px 60px 40px; 
+  padding: 76px 40px 60px 40px;
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.12);
   position: relative;
@@ -117,12 +117,12 @@ h2 {
   left: 0;
   right: 0;
   width: 100%;
-  background: #cee6d4; 
+  background: #cee6d4;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   padding: 10px 18px;
   z-index: 999;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 .site-nav .nav-inner {
   width: 100%;
@@ -149,6 +149,43 @@ h2 {
 @media (max-width: 720px) {
   .site-nav { flex-direction: column; gap: 6px; left: 0; transform: none; }
   .container { padding-top: 110px; }
+}
+
+/* Stock table styles */
+.stock-table-wrapper {
+  overflow-x: auto;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #e6efe9;
+}
+.stock-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+.stock-table thead {
+  background: linear-gradient(#2f7f3f,#2f7f3f);
+  color: #fff;
+}
+.stock-table th {
+  padding: 12px 14px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+.stock-table tbody tr {
+  border-bottom: 1px solid #e9efe9;
+}
+.stock-table tbody tr:hover {
+  background: #f8fcf9;
+}
+.stock-table td {
+  padding: 10px 14px;
+  color: #1b2f24;
+}
+.stock-table tbody tr:last-child {
+  border-bottom: none;
 }
 
 @media (max-width: 820px) {
